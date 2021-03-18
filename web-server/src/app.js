@@ -20,7 +20,11 @@ app.get('/about', (req, res) => {
         name: 'Andrew Mead'
     })
 })
+//Create a template for a help page
 
+//Setup a help template to render a help message to the screen
+// setup a help route and render the template with an example text
+// Visit the route in the browser and see message print
 app.get('/help', (req, res) => {
     res.render('help', {
         helpText: 'This is some helpful text.'
